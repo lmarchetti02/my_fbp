@@ -53,3 +53,10 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# my stuff
+build/
+new_file.sh
+compile.sh
+compile_commands.json
+.cache/
