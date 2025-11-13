@@ -60,3 +60,4 @@ new_file.sh
 compile.sh
 compile_commands.json
 .cache/
+.DS_Store
