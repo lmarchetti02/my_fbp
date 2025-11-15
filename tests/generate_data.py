@@ -10,15 +10,12 @@ SIZE = 2**10
 def main():
     """Main function"""
     rng = np.random.default_rng()
-    x_re = rng.random(SIZE)
-    x_im = rng.random(SIZE)
+    x = rng.random(SIZE)
 
-    x = np.vstack((x_re, x_im)).transpose()
     np.savetxt(
-        "data_fft.csv",
+        "data_fft.txt",
         x,
         fmt="%.15f",
-        delimiter=",",
     )
 
 

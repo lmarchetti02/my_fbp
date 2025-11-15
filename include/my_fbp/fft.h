@@ -1,14 +1,17 @@
 #ifndef FFT_H
 #define FFT_H
 
+#include "data.h"
+
 #include <complex.h>
 #include <stdlib.h>
 
-typedef struct {
-  double complex *data;
-  int p_value;
-} my_vector;
-
-void bit_reversal(my_vector *vector);
+/**
+ * Perform the RDFT on a projection
+ *
+ * @param proj The projection to compute
+ * @return The RDFT of the projection
+ */
+fr_projection *real_fft(re_projection *proj);
 
 #endif // FFT_H
